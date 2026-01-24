@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>No Guardian Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0f0f0f url('https://assets.change.org/photos/4/zo/dc/YAzoDCpdfDxoagH-800x450-noPad.jpg?1653691821');
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 40px;
+      text-shadow: 0 0 20px #00f0ff;
+    }
+
+    .neon-button {
+      padding: 20px 40px;
+      font-size: 1.5em;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      background: #00f0ff;
+      color: #111;
+      box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+      animation: pulse 2s infinite;
+      transition: transform 0.3s ease;
+      margin: 10px;
+    }
+
+    .neon-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #00f0ff, 0 0 60px #00f0ff;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff; }
+      50% { box-shadow: 0 0 40px #00f0ff, 0 0 80px #00f0ff; }
+      100% { box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff; }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>No Guardian Hub</h1>
+
+  <button class="neon-button" onclick="launchihateschoolhub()">I hate school hub (main project)</button>
+  <button class="neon-button" onclick="launchRGChub()">RGC Hub</button>
+  <button class="neon-button" onclick="launchJewhub()">Jew hub</button>
+  <button class="neon-button" onclick="launchDemo()">Blooket menus (kinda broke rn)</button>
+
+  <script>
+    //========== I hate school hub ==============//
+    function launchihateschoolhub() {
+      const win = window.open("about:blank", "_blank", "width=900,height=600");
+      if (!win) { alert("Popup blocked!"); return; }
+
+      fetch("https://bentleyohio.github.io/i-hate-school-hub-V2.0.3/")
+        .then(r => r.text())
+        .then(html => {
+          win.document.open();
+          win.document.write(html);
+          win.document.close();
+          win.onbeforeunload = e => { e.preventDefault(); return ""; };
+        })
+        .catch(() => {
+          win.document.write("<h1 style='color:red;text-align:center;'>Blocked or unreachable 😢</h1>");
+          win.document.close();
+          win.onbeforeunload = e => { e.preventDefault(); return ""; };
+        });
+    }
+
+    //========== Blooket menus ==============//
+    function launchDemo() {
+      const win = window.open("about:blank", "_blank", "width=900,height=600");
+      if (!win) { alert("Popup blocked!"); return; }
+
+      fetch("https://bentleyohio.github.io/i-hate-blooket-hub/")
+        .then(r => r.text())
+        .then(html => {
+          win.document.open();
+          win.document.write(html);
+          win.document.close();
+          win.onbeforeunload = e => { e.preventDefault(); return ""; };
+        })
+        .catch(() => {
+          win.document.write("<h1 style='color:red;text-align:center;'>Blocked or unreachable 😢</h1>");
+          win.document.close();
+          win.onbeforeunload = e => { e.preventDefault(); return ""; };
+        });
+    }
+
+    //========== RGC HUB ==============//
+    function launchRGChub() {
+      const win = window.open("about:blank", "_blank", "width=900,height=600");
+      if (!win) { alert("Popup blocked!"); return; }
+
+      fetch("https://bentleyohio.github.io/RGC-Hub/")
+        .then(r => r.text())
+        .then(html => {
+          win.document.open();
+          win.document.write(html);
+          win.document.close();
+          win.onbeforeunload = e => { e.preventDefault(); return ""; };
+        })
+        .catch(() => {
+          win.document.write("<h1 style='color:red;text-align:center;'>Blocked or unsneachniggle 😢</h1>");
+          win.document.close();
+          win.onbeforeunload = e => { e.preventDefault(); return ""; };
+        });
+    }
+
+    //========== JEW HUB ==============//
+    function launchJewhub() {
+      const win = window.open("about:blank", "_blank", "width=900,height=600");
+      if (!win) { alert("Popup blocked!"); return; }
+
+      fetch("https://bentleyohio.github.io/JEW-HUB/")
+        .then(r => r.text())
+        .then(html => {
+          win.document.open();
+          win.document.write(html);
+          win.document.close();
+          win.onbeforeunload = e => { e.preventDefault(); return ""; };
+        })
+        .catch(() => {
+          win.document.write("<h1 style='color:red;text-align:center;'>Blocked or unsneachniggle 😢</h1>");
+          win.document.close();
+          win.onbeforeunload = e => { e.preventDefault(); return ""; };
+        });
+    }
+
+    //========== History Flooder ==============//
+    function launchHistorflooder() {
+      const win = window.open("about:blank", "_blank", "width=900,height=600");
+      if (!win) { alert("Popup blocked!"); return; }
+
+      fetch("https://bentleyohio.github.io/History-fldr-gh/")
+        .then(r => r.text())
+        .then(html => {
+          win.document.open();
+          win.document.write(html);
+          win.document.close();
+          win.onbeforeunload = e => { e.preventDefault(); return ""; };
+        })
+        .catch(() => {
+          win.document.write("<h1 style='color:red;text-align:center;'>Blocked or unsneachniggle 😢</h1>");
+          win.document.close();
+          win.onbeforeunload = e => { e.preventDefault(); return ""; };
+        });
+    }
+  </script>
+</body>
+</html>
